@@ -1,14 +1,17 @@
 <?php
 
 get_header();
+?>
 
-
-while(have_posts()){
-    the_post(); ?>
-    <h2><a href="<?php the_permalink()?>"><?php the_title(); ?></a></h2>
-
-    <p><?php the_content(); ?></p>
-<?php }
-
+<section id="banner">
+				<div class="inner">
+					<h1>Introspect: <span>A free + fully responsive<br />
+					site template by TEMPLATED</span></h1>
+					<ul class="actions">
+						<li><a href="#" class="button alt">Get Started</a></li>
+					</ul>
+				</div>
+			</section>
+<?php
 get_footer();
 ?>
