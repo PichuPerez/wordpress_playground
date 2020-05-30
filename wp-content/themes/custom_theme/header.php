@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 
-<head>
-
+<head <?php language_attributes() ?> >
+<meta name="viewport" content="width=device-width, intial-scale=1" />
+<meta charsert="<?php bloginfo( 'charset' )?>" />
 <?php  wp_head(); ?>
 </head>
-<body>
+<body <?php body_class()?> >
 <header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo">introspect</a>
+					<a href="<?php echo site_url()?>" class="logo">introspect</a>
 					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="generic.html">Generic</a>
-						<a href="elements.html">Elements</a>
+						<a href="<?php echo site_url()?>">Home</a>
+						<a href="<?php echo site_url('/about')?>">About</a>
+						<a href="<?php echo site_url('/blog')?>">Blog</a>
+						<a href="<?php echo site_url('/privacy-policy')?>">Privacy Policy</a>
 					</nav>
 				</div>
 			</header>
